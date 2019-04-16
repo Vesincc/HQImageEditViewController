@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1234E431DF783016776F53B7 /* libPods-HQImageEditViewControllerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BEEF9EF02E68470045761E /* libPods-HQImageEditViewControllerDemo.a */; };
+		81D353FC2265C6ED00CA287E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D353FB2265C6ED00CA287E /* AppDelegate.m */; };
+		81D354042265C6ED00CA287E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D354032265C6ED00CA287E /* Assets.xcassets */; };
+		81D354072265C6ED00CA287E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D354052265C6ED00CA287E /* LaunchScreen.storyboard */; };
+		81D3540A2265C6ED00CA287E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D354092265C6ED00CA287E /* main.m */; };
+		81D354142265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D354132265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.m */; };
+		81D354202265C76800CA287E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3541F2265C76800CA287E /* ViewController.m */; };
+		81D354312265C77100CA287E /* HQImageEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D354222265C77100CA287E /* HQImageEditViewController.m */; };
+		81D354322265C77100CA287E /* ic_rotate_90_degrees_ccw.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D354242265C77100CA287E /* ic_rotate_90_degrees_ccw.png */; };
+		81D354332265C77100CA287E /* cycle_bottom_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D354252265C77100CA287E /* cycle_bottom_right.png */; };
+		81D354342265C77100CA287E /* cycle_bottom_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D354262265C77100CA287E /* cycle_bottom_left.png */; };
+		81D354352265C77100CA287E /* cycle_top_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D354272265C77100CA287E /* cycle_top_left.png */; };
+		81D354362265C77100CA287E /* cycle_top_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D354282265C77100CA287E /* cycle_top_right.png */; };
+		81D354372265C77100CA287E /* HQEditImageActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3542A2265C77100CA287E /* HQEditImageActionView.m */; };
+		81D354382265C77100CA287E /* HQEditImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3542C2265C77100CA287E /* HQEditImageEditView.m */; };
+		81D354392265C77100CA287E /* HQEditImageCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D3542E2265C77100CA287E /* HQEditImageCaptureView.m */; };
+		81D3543B2265C78200CA287E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D3543A2265C78200CA287E /* Main.storyboard */; };
+		E798A6E9BEFE5DCBB50A0327 /* libPods-HQImageEditViewControllerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E70B6C74B7458B52A1D43DA /* libPods-HQImageEditViewControllerDemoUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81D354102265C6EE00CA287E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D353EF2265C6ED00CA287E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D353F62265C6ED00CA287E;
+			remoteInfo = HQImageEditViewControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F800BB5EDEBB73DD03ED3AC /* Pods-HQImageEditViewControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQImageEditViewControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQImageEditViewControllerDemo/Pods-HQImageEditViewControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3CBFDA8416C12FD23EC09D7F /* Pods-HQImageEditViewControllerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQImageEditViewControllerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQImageEditViewControllerDemoUITests/Pods-HQImageEditViewControllerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		70BEEF9EF02E68470045761E /* libPods-HQImageEditViewControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HQImageEditViewControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D353F72265C6ED00CA287E /* HQImageEditViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQImageEditViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D353FA2265C6ED00CA287E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		81D353FB2265C6ED00CA287E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		81D354032265C6ED00CA287E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D354062265C6ED00CA287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81D354082265C6ED00CA287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D354092265C6ED00CA287E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81D3540F2265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQImageEditViewControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D354132265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQImageEditViewControllerDemoUITests.m; sourceTree = "<group>"; };
+		81D354152265C6EE00CA287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D3541E2265C76800CA287E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		81D3541F2265C76800CA287E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		81D354222265C77100CA287E /* HQImageEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQImageEditViewController.m; sourceTree = "<group>"; };
+		81D354242265C77100CA287E /* ic_rotate_90_degrees_ccw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_rotate_90_degrees_ccw.png; sourceTree = "<group>"; };
+		81D354252265C77100CA287E /* cycle_bottom_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_bottom_right.png; sourceTree = "<group>"; };
+		81D354262265C77100CA287E /* cycle_bottom_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_bottom_left.png; sourceTree = "<group>"; };
+		81D354272265C77100CA287E /* cycle_top_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_top_left.png; sourceTree = "<group>"; };
+		81D354282265C77100CA287E /* cycle_top_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_top_right.png; sourceTree = "<group>"; };
+		81D3542A2265C77100CA287E /* HQEditImageActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQEditImageActionView.m; sourceTree = "<group>"; };
+		81D3542B2265C77100CA287E /* HQEditImageCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQEditImageCaptureView.h; sourceTree = "<group>"; };
+		81D3542C2265C77100CA287E /* HQEditImageEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQEditImageEditView.m; sourceTree = "<group>"; };
+		81D3542D2265C77100CA287E /* HQEditImageActionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQEditImageActionView.h; sourceTree = "<group>"; };
+		81D3542E2265C77100CA287E /* HQEditImageCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQEditImageCaptureView.m; sourceTree = "<group>"; };
+		81D3542F2265C77100CA287E /* HQEditImageEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQEditImageEditView.h; sourceTree = "<group>"; };
+		81D354302265C77100CA287E /* HQImageEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQImageEditViewController.h; sourceTree = "<group>"; };
+		81D3543A2265C78200CA287E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9E70B6C74B7458B52A1D43DA /* libPods-HQImageEditViewControllerDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HQImageEditViewControllerDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77F79A1C0D02AEB09DC9FAD /* Pods-HQImageEditViewControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQImageEditViewControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQImageEditViewControllerDemo/Pods-HQImageEditViewControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D072B384D907024592884397 /* Pods-HQImageEditViewControllerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQImageEditViewControllerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQImageEditViewControllerDemoUITests/Pods-HQImageEditViewControllerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81D353F42265C6ED00CA287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1234E431DF783016776F53B7 /* libPods-HQImageEditViewControllerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D3540C2265C6EE00CA287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E798A6E9BEFE5DCBB50A0327 /* libPods-HQImageEditViewControllerDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81D353EE2265C6ED00CA287E = {
+			isa = PBXGroup;
+			children = (
+				81D353F92265C6ED00CA287E /* HQImageEditViewControllerDemo */,
+				81D354122265C6EE00CA287E /* HQImageEditViewControllerDemoUITests */,
+				81D353F82265C6ED00CA287E /* Products */,
+				D58B17CFE75AF5585BEFE91C /* Pods */,
+				EDB9F5E1CE9BD6CDE61F0CFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81D353F82265C6ED00CA287E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81D353F72265C6ED00CA287E /* HQImageEditViewControllerDemo.app */,
+				81D3540F2265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81D353F92265C6ED00CA287E /* HQImageEditViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				81D354212265C77100CA287E /* HQImageEditViewController */,
+				81D353FA2265C6ED00CA287E /* AppDelegate.h */,
+				81D353FB2265C6ED00CA287E /* AppDelegate.m */,
+				81D3541E2265C76800CA287E /* ViewController.h */,
+				81D3541F2265C76800CA287E /* ViewController.m */,
+				81D354032265C6ED00CA287E /* Assets.xcassets */,
+				81D3543A2265C78200CA287E /* Main.storyboard */,
+				81D354052265C6ED00CA287E /* LaunchScreen.storyboard */,
+				81D354082265C6ED00CA287E /* Info.plist */,
+				81D354092265C6ED00CA287E /* main.m */,
+			);
+			path = HQImageEditViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		81D354122265C6EE00CA287E /* HQImageEditViewControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				81D354132265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.m */,
+				81D354152265C6EE00CA287E /* Info.plist */,
+			);
+			path = HQImageEditViewControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		81D354212265C77100CA287E /* HQImageEditViewController */ = {
+			isa = PBXGroup;
+			children = (
+				81D354222265C77100CA287E /* HQImageEditViewController.m */,
+				81D354232265C77100CA287E /* Source */,
+				81D354292265C77100CA287E /* View */,
+				81D354302265C77100CA287E /* HQImageEditViewController.h */,
+			);
+			path = HQImageEditViewController;
+			sourceTree = "<group>";
+		};
+		81D354232265C77100CA287E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				81D354242265C77100CA287E /* ic_rotate_90_degrees_ccw.png */,
+				81D354252265C77100CA287E /* cycle_bottom_right.png */,
+				81D354262265C77100CA287E /* cycle_bottom_left.png */,
+				81D354272265C77100CA287E /* cycle_top_left.png */,
+				81D354282265C77100CA287E /* cycle_top_right.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		81D354292265C77100CA287E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81D3542A2265C77100CA287E /* HQEditImageActionView.m */,
+				81D3542B2265C77100CA287E /* HQEditImageCaptureView.h */,
+				81D3542C2265C77100CA287E /* HQEditImageEditView.m */,
+				81D3542D2265C77100CA287E /* HQEditImageActionView.h */,
+				81D3542E2265C77100CA287E /* HQEditImageCaptureView.m */,
+				81D3542F2265C77100CA287E /* HQEditImageEditView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D58B17CFE75AF5585BEFE91C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C77F79A1C0D02AEB09DC9FAD /* Pods-HQImageEditViewControllerDemo.debug.xcconfig */,
+				0F800BB5EDEBB73DD03ED3AC /* Pods-HQImageEditViewControllerDemo.release.xcconfig */,
+				3CBFDA8416C12FD23EC09D7F /* Pods-HQImageEditViewControllerDemoUITests.debug.xcconfig */,
+				D072B384D907024592884397 /* Pods-HQImageEditViewControllerDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDB9F5E1CE9BD6CDE61F0CFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70BEEF9EF02E68470045761E /* libPods-HQImageEditViewControllerDemo.a */,
+				9E70B6C74B7458B52A1D43DA /* libPods-HQImageEditViewControllerDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81D353F62265C6ED00CA287E /* HQImageEditViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D354182265C6EE00CA287E /* Build configuration list for PBXNativeTarget "HQImageEditViewControllerDemo" */;
+			buildPhases = (
+				ACE8AF5E7604FCCDF04DBAAF /* [CP] Check Pods Manifest.lock */,
+				81D353F32265C6ED00CA287E /* Sources */,
+				81D353F42265C6ED00CA287E /* Frameworks */,
+				81D353F52265C6ED00CA287E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HQImageEditViewControllerDemo;
+			productName = HQImageEditViewControllerDemo;
+			productReference = 81D353F72265C6ED00CA287E /* HQImageEditViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81D3540E2265C6EE00CA287E /* HQImageEditViewControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D3541B2265C6EE00CA287E /* Build configuration list for PBXNativeTarget "HQImageEditViewControllerDemoUITests" */;
+			buildPhases = (
+				F2DD77CCB942657F5C42DE04 /* [CP] Check Pods Manifest.lock */,
+				81D3540B2265C6EE00CA287E /* Sources */,
+				81D3540C2265C6EE00CA287E /* Frameworks */,
+				81D3540D2265C6EE00CA287E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D354112265C6EE00CA287E /* PBXTargetDependency */,
+			);
+			name = HQImageEditViewControllerDemoUITests;
+			productName = HQImageEditViewControllerDemoUITests;
+			productReference = 81D3540F2265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81D353EF2265C6ED00CA287E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = iOS;
+				TargetAttributes = {
+					81D353F62265C6ED00CA287E = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					81D3540E2265C6EE00CA287E = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 81D353F62265C6ED00CA287E;
+					};
+				};
+			};
+			buildConfigurationList = 81D353F22265C6ED00CA287E /* Build configuration list for PBXProject "HQImageEditViewControllerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81D353EE2265C6ED00CA287E;
+			productRefGroup = 81D353F82265C6ED00CA287E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81D353F62265C6ED00CA287E /* HQImageEditViewControllerDemo */,
+				81D3540E2265C6EE00CA287E /* HQImageEditViewControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81D353F52265C6ED00CA287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D354342265C77100CA287E /* cycle_bottom_left.png in Resources */,
+				81D354072265C6ED00CA287E /* LaunchScreen.storyboard in Resources */,
+				81D354042265C6ED00CA287E /* Assets.xcassets in Resources */,
+				81D3543B2265C78200CA287E /* Main.storyboard in Resources */,
+				81D354332265C77100CA287E /* cycle_bottom_right.png in Resources */,
+				81D354362265C77100CA287E /* cycle_top_right.png in Resources */,
+				81D354352265C77100CA287E /* cycle_top_left.png in Resources */,
+				81D354322265C77100CA287E /* ic_rotate_90_degrees_ccw.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D3540D2265C6EE00CA287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACE8AF5E7604FCCDF04DBAAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HQImageEditViewControllerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2DD77CCB942657F5C42DE04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HQImageEditViewControllerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81D353F32265C6ED00CA287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D354372265C77100CA287E /* HQEditImageActionView.m in Sources */,
+				81D354202265C76800CA287E /* ViewController.m in Sources */,
+				81D3540A2265C6ED00CA287E /* main.m in Sources */,
+				81D353FC2265C6ED00CA287E /* AppDelegate.m in Sources */,
+				81D354392265C77100CA287E /* HQEditImageCaptureView.m in Sources */,
+				81D354312265C77100CA287E /* HQImageEditViewController.m in Sources */,
+				81D354382265C77100CA287E /* HQEditImageEditView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D3540B2265C6EE00CA287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D354142265C6EE00CA287E /* HQImageEditViewControllerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81D354112265C6EE00CA287E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D353F62265C6ED00CA287E /* HQImageEditViewControllerDemo */;
+			targetProxy = 81D354102265C6EE00CA287E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81D354052265C6ED00CA287E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81D354062265C6ED00CA287E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81D354162265C6EE00CA287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		81D354172265C6EE00CA287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81D354192265C6EE00CA287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77F79A1C0D02AEB09DC9FAD /* Pods-HQImageEditViewControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXCKDLU5WN;
+				INFOPLIST_FILE = HQImageEditViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dashengbaiyi.HQImageEditViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81D3541A2265C6EE00CA287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F800BB5EDEBB73DD03ED3AC /* Pods-HQImageEditViewControllerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXCKDLU5WN;
+				INFOPLIST_FILE = HQImageEditViewControllerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dashengbaiyi.HQImageEditViewControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81D3541C2265C6EE00CA287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBFDA8416C12FD23EC09D7F /* Pods-HQImageEditViewControllerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXCKDLU5WN;
+				INFOPLIST_FILE = HQImageEditViewControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dashengbaiyi.HQImageEditViewControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HQImageEditViewControllerDemo;
+			};
+			name = Debug;
+		};
+		81D3541D2265C6EE00CA287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D072B384D907024592884397 /* Pods-HQImageEditViewControllerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXCKDLU5WN;
+				INFOPLIST_FILE = HQImageEditViewControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dashengbaiyi.HQImageEditViewControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HQImageEditViewControllerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81D353F22265C6ED00CA287E /* Build configuration list for PBXProject "HQImageEditViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D354162265C6EE00CA287E /* Debug */,
+				81D354172265C6EE00CA287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D354182265C6EE00CA287E /* Build configuration list for PBXNativeTarget "HQImageEditViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D354192265C6EE00CA287E /* Debug */,
+				81D3541A2265C6EE00CA287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D3541B2265C6EE00CA287E /* Build configuration list for PBXNativeTarget "HQImageEditViewControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D3541C2265C6EE00CA287E /* Debug */,
+				81D3541D2265C6EE00CA287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81D353EF2265C6ED00CA287E /* Project object */;
+}

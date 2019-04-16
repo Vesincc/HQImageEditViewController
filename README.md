@@ -20,10 +20,10 @@ pod ''
 
 ## Use
 ```objc
-    HQImageEditViewController *vc = [[HQImageEditViewController alloc] init];
-    vc.originImage = [UIImage imageNamed:@"25"];
-    vc.delegate = self;
-    [self.navigationController pushViewController:vc animated:YES];
+HQImageEditViewController *vc = [[HQImageEditViewController alloc] init];
+vc.originImage = [UIImage imageNamed:@"25"];
+vc.delegate = self;
+[self.navigationController pushViewController:vc animated:YES];
 ```
 
 ## Delegate
@@ -44,5 +44,17 @@ pod ''
  @param vc vc
  */
 - (void)editControllerDidClickCancel:(HQImageEditViewController *)vc;
+```
+
+## 裁剪框
+```objc
+HQImageEditViewController *vc = [[HQImageEditViewController alloc] init];
+vc.editViewSize = CGSizeMake(300, 200);
+```
+
+## 裁剪蒙层
+```objc
+HQImageEditViewController *vc = [[HQImageEditViewController alloc] init];
+vc.maskViewAnimation = YES;
 ```
 

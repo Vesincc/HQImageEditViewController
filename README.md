@@ -28,6 +28,9 @@ vc.delegate = self;
 
 ## Delegate
 ```objc
+
+@protocol HQImageEditViewControllerDelegate <NSObject>
+
 /**
  选取完成
 
@@ -44,6 +47,8 @@ vc.delegate = self;
  @param vc vc
  */
 - (void)editControllerDidClickCancel:(HQImageEditViewController *)vc;
+
+@end
 ```
 
 ## 裁剪框

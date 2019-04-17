@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @class HQEditImageEditView;

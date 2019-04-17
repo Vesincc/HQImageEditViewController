@@ -10,7 +10,7 @@
 #import "HQEditImageActionView.h"
 #import "HQEditImageCaptureView.h"
 #import "HQEditImageEditView.h"
-#import <Masonry.h>
+#import <Masonry/Masonry.h>
 
 @interface HQImageEditViewController () <UIScrollViewDelegate, HQEditImageActionViewDelegate, HQEditImageEditViewDelegate>
 

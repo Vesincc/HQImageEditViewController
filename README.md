@@ -3,7 +3,7 @@
 
 ## CocoaPods
 ```
-pod ''
+pod 'HQImageEditViewController'
 ```
 
 ## ScreenShot

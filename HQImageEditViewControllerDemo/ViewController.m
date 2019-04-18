@@ -31,7 +31,7 @@
     HQImageEditViewController *vc = [[HQImageEditViewController alloc] init];
     vc.originImage = [UIImage imageNamed:@"25"];
     vc.delegate = self;
-    vc.editViewSize = CGSizeMake(300, 200);
+//    vc.editViewSize = CGSizeMake(300, 200);
 //    [self presentViewController:vc animated:YES completion:nil];
     [self.navigationController pushViewController:vc animated:YES];
 }

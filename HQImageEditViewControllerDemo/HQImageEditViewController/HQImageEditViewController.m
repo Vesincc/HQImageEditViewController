@@ -12,6 +12,13 @@
 #import "HQEditImageEditView.h"
 #import <Masonry/Masonry.h>
 
+static inline UIEdgeInsets hq_safeAreaInset() {
+    if (@available(iOS 11.0, *)) {
+        return [UIApplication sharedApplication].keyWindow.safeAreaInsets;
+    }
+    return UIEdgeInsetsZero;
+}
+
 @interface HQImageEditViewController () <UIScrollViewDelegate, HQEditImageActionViewDelegate, HQEditImageEditViewDelegate>
 
 @property (nonatomic, strong) HQEditImageCaptureView *captureView;
@@ -51,19 +58,19 @@
     [self.captureView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(self.editViewSize.width));
         make.height.equalTo(@(self.editViewSize.height));
-        make.top.equalTo(@((CGFloat)(([UIApplication sharedApplication].keyWindow.safeAreaInsets.top) + self.topSpace)));
+        make.top.equalTo(@((CGFloat)(hq_safeAreaInset().top + self.topSpace)));
         make.centerX.equalTo(@0);
     }];
     
     [self.actionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(@0);
-        make.height.equalTo(@(49*2 + ([UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom)));
+        make.height.equalTo(@(49*2 + hq_safeAreaInset().bottom));
     }];
     
     [self.editView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(self.editViewSize.width));
         make.height.equalTo(@(self.editViewSize.height));
-        make.top.equalTo(@((CGFloat)(([UIApplication sharedApplication].keyWindow.safeAreaInsets.top) + self.topSpace)));
+        make.top.equalTo(@((CGFloat)(hq_safeAreaInset().top + self.topSpace)));
         make.centerX.equalTo(@0);
     }];
 }
@@ -96,6 +103,10 @@
     [super viewDidDisappear:animated];
     
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -139,6 +150,10 @@
     } else if (index == 2) { // 还原
         [self originAll];
     } else if (index == 3) { // 完成
+        if (self.scrollView.isDragging || self.scrollView.isDecelerating || self.scrollView.isZoomBouncing) {
+            return;
+        }
+        
         UIImage *image = [self.captureView captureImage];
         UIImage *originImage = [self.captureView captureOriginalImage];
         if ([self.delegate respondsToSelector:@selector(editController:finishiEditShotImage:originSizeImage:)]) {
@@ -155,7 +170,7 @@
 
 #pragma mark - private method
 - (void)rotateScrollView:(NSInteger)times {
-
+    self.view.userInteractionEnabled = NO;
     [UIView animateWithDuration:.3f animations:^{
         self.scrollView.transform = CGAffineTransformRotate(self.scrollView.transform, -M_PI_2);
     } completion:^(BOOL finished) {
@@ -175,7 +190,10 @@
                 }
             } completion:^(BOOL finished) {
                 self.scrollView.contentSize = self.imageView.frame.size;
+                self.view.userInteractionEnabled = YES;
             }];
+        } else {
+            self.view.userInteractionEnabled = YES;
         }
     }];
     
@@ -199,7 +217,7 @@
 
 #pragma mark - getter & setter
 - (CGFloat)topSpace {
-    return (([[UIScreen mainScreen] bounds].size.height) - ([UIApplication sharedApplication].keyWindow.safeAreaInsets.top) - ([UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom) - 49*2 - self.editViewSize.height)/2.f;
+    return (([[UIScreen mainScreen] bounds].size.height) - hq_safeAreaInset().top - hq_safeAreaInset().bottom - 49*2 - self.editViewSize.height)/2.f;
 }
 
 - (CGFloat)leftSpace {
@@ -211,7 +229,7 @@
 }
 
 - (CGFloat)bottomSpace {
-    return (([[UIScreen mainScreen] bounds].size.height) - ([UIApplication sharedApplication].keyWindow.safeAreaInsets.top) - ([UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom) - 49*2 - self.editViewSize.height)/2.f;
+    return (([[UIScreen mainScreen] bounds].size.height) - hq_safeAreaInset().top - hq_safeAreaInset().bottom - 49*2 - self.editViewSize.height)/2.f;
 }
 
 - (CGSize)editViewSize {
@@ -257,7 +275,11 @@
         
         _scrollView.contentInset = UIEdgeInsetsZero;
         _scrollView.contentSize = CGSizeMake(self.imageViewOriginSize.width, self.imageViewOriginSize.height);
-        _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        if (@available(iOS 11.0, *)) {
+            _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        } else {
+            // Fallback on earlier versions
+        }
     }
     return _scrollView;
 }
@@ -281,7 +303,7 @@
 
 - (HQEditImageEditView *)editView {
     if (!_editView) {
-        _editView = [[HQEditImageEditView alloc] initWithMargin:UIEdgeInsetsMake(self.topSpace + ([UIApplication sharedApplication].keyWindow.safeAreaInsets.top), self.leftSpace, self.bottomSpace, self.rightSpace) size:CGSizeMake(self.editViewSize.width, self.editViewSize.height)];
+        _editView = [[HQEditImageEditView alloc] initWithMargin:UIEdgeInsetsMake(self.topSpace + hq_safeAreaInset().top, self.leftSpace, self.bottomSpace, self.rightSpace) size:CGSizeMake(self.editViewSize.width, self.editViewSize.height)];
         
         _editView.delegate = self;
         _editView.maskViewAnimation = self.maskViewAnimation;

@@ -71,7 +71,30 @@
     if (self.imageWrap.hidden == NO && self.isMoving == NO) {
         for (UIView *view in self.imageWrap.subviews) {
             CGRect rect = [view convertRect:view.bounds toView:self];
-            if (CGRectContainsPoint(rect, point)) {
+            CGRect touchRect;
+            
+            switch (view.tag) {
+                case 0: // 左上
+                    touchRect = CGRectMake(rect.origin.x - rect.size.width, rect.origin.y - rect.size.height, rect.size.width*2, rect.size.height * 2);
+                    break;
+                    
+                case 1: // 右上
+                    touchRect = CGRectMake(rect.origin.x, rect.origin.y - rect.size.height, rect.size.width*2, rect.size.height * 2);
+                    break;
+                    
+                case 2: // 左下
+                    touchRect = CGRectMake(rect.origin.x - rect.size.width, rect.origin.y , rect.size.width*2, rect.size.height * 2);
+                    break;
+                    
+                case 3: // 右下
+                    touchRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width*2, rect.size.height * 2);
+                    break;
+                    
+                default:
+                    touchRect = CGRectZero;
+                    break;
+            }
+            if (CGRectContainsPoint(touchRect, point)) {
                 return view;
             }
         }

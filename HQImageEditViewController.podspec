@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HQImageEditViewController"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "iOS 头像裁剪、图片裁剪"
 
   # This description is used to generate tags and improve search results.
@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
 iOS 头像裁剪、图片裁剪 微信头像裁剪
+扩大四角触摸区域，修复动画过程中能够点击完成的问题
                    DESC
 
   s.homepage     = "https://github.com/Vesincc/HQImageEditViewController"
@@ -65,7 +66,7 @@ iOS 头像裁剪、图片裁剪 微信头像裁剪
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
